@@ -1,0 +1,64 @@
+body {
+  font-family: $main-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $text-color;
+  background-color: $white-color;
+}
+
+.list-no-style {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 480px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 15px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* ----portfolio-components----- */
+.portfolio {
+  padding: 94px 0;
+
+  &-box {
+    // display: flex;
+    // flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+/* ----modal-companents----- */
+.modal-conditions-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}

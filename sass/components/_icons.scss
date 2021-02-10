@@ -1,0 +1,100 @@
+/*--contacts-icons--*/
+.contacts-icon {
+  margin-right: 10px;
+  display: none;
+
+  &.icon-envelope {
+    width: 16px;
+    height: 12px;
+  }
+
+  &.icon-smartphone {
+    width: 10px;
+    height: 16px;
+  }
+}
+
+/*-- social-networks-icons--*/
+.social-networks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .icon-svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  &-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: $icons-color;
+    fill: currentColor;
+    transition: background-color 250ms $timing-function,
+      color 250ms $timing-function;
+  }
+
+  &-link:hover,
+  &-link:focus {
+    background-color: $hover-color;
+    color: $white-color;
+  }
+
+  &-icon:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+/*--modal-form-icon--*/
+
+.conditions-icon-check {
+  display: block;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 2px solid $title-color;
+  border-radius: 4px;
+  transition: background-color 250ms $timing-function,
+    border-color 250ms $timing-function;
+
+  .modal-conditions-input:checked + & {
+    background-color: $hover-color;
+    border-color: $hover-color;
+    background-image: url(../images/decoration/icons/icon-check.svg);
+    background-size: contain;
+    background-origin: border-box;
+  }
+
+  .modal-conditions-input:focus + & {
+    border-color: $hover-color;
+  }
+}
+
+.modal-input-box-icon {
+  position: absolute;
+  top: 29px;
+  left: 15px;
+  transition: fill 250ms $timing-function;
+}
+
+.modal-form-input:placeholder-shown:focus + .modal-input-box-icon,
+.modal-form-input:placeholder-shown:focus,
+.modal-form-comment:placeholder-shown:focus,
+.modal-form-input:not(:placeholder-shown):focus + .modal-input-box-icon,
+.modal-form-input:not(:placeholder-shown):focus,
+.modal-form-comment:not(:placeholder-shown):focus {
+  fill: $hover-color;
+  border-color: $hover-color;
+  outline: none;
+}
+
+/*--footer-icons--*/
+
+.social-networks-gray {
+  color: $white-color;
+  background: rgba(255, 255, 255, 0.1);
+}

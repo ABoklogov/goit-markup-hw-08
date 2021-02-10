@@ -1,0 +1,73 @@
+.contacts-nav {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-bottom: 64px;
+
+  & .contacts-nav-tel {
+    margin-bottom: 32px;
+  }
+
+  li:not(:last-child) {
+    // margin-bottom: 32px;
+  }
+
+  &-paragraph {
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    transition: color 250ms $timing-function;
+    color: $text-color;
+    fill: currentColor;
+  }
+  &-paragraph:hover,
+  &-paragraph:focus {
+    color: $hover-color;
+  }
+
+  &-paragraph-tel {
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: $hover-color;
+  }
+
+  &-paragraph-mail {
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+}
+
+.menu-conteiner {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 38px;
+  padding-bottom: 48px;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 100%;
+  height: 796px;
+  background-color: $white-color;
+  outline: 1px solid tomato;
+  // display: none;
+
+  &-contacts-list {
+    display: flex;
+  }
+
+  &-contacts-item:not(:last-child) {
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+
+  &-contacts-site {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1, 22;
+    letter-spacing: 0.02em;
+    color: $hover-color;
+  }
+}

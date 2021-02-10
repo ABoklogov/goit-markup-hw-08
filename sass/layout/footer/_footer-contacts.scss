@@ -1,0 +1,24 @@
+.footer-box-contacts {
+  // margin-right: 85px;
+
+  .address {
+    margin-bottom: 9px;
+    font-style: normal;
+    color: $white-color;
+  }
+
+  li:not(:last-child) {
+    margin-bottom: 9px;
+    display: inline-block;
+  }
+
+  &-links {
+    color: $footer-contacts-color;
+    transition: color 250ms $timing-function;
+  }
+
+  &-links:hover,
+  &-links:focus {
+    color: $hover-color;
+  }
+}
