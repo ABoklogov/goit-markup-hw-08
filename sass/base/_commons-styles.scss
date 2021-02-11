@@ -21,10 +21,8 @@ a {
 
 .container {
   position: relative;
-  // width: 480px;
   margin: 0 auto;
   padding: 0 15px;
-  background-color: aqua;
 
   @media screen and (min-width: 480px) {
     width: 480px;

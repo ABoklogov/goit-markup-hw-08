@@ -1,24 +1,26 @@
 .clients {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 
   &-list {
-    // display: flex;
-    // justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
   }
 
   &-box {
     display: block;
-    width: 170px;
+    width: 210px;
     height: 90px;
+    margin: 15px;
   }
 
   &-title {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
     color: $title-color;

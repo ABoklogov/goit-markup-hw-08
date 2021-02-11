@@ -3,12 +3,16 @@
   padding-top: 60px;
   background-color: $commands-background-color;
 
+  &-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
   &-title {
     margin-top: 0;
     margin-bottom: 50px;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
     color: $title-color;
@@ -24,6 +28,10 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     background: $white-color;
+  }
+
+  &-image {
+    width: 100%;
   }
 }
 
