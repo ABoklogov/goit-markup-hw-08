@@ -21,11 +21,27 @@ a {
 
 .container {
   position: relative;
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   padding: 0 15px;
   background-color: aqua;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 img {
@@ -696,6 +712,14 @@ img {
   border-radius: 4px;
 }
 
+.advantages-list-item {
+  max-width: 450px;
+}
+
+.advantages-list-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .advantages-list-title {
   margin-top: 0;
   margin-bottom: 10;
@@ -722,6 +746,12 @@ img {
 
 .lessons {
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 1199px) {
+  .lessons {
+    display: none;
+  }
 }
 
 .lessons-title {
@@ -764,8 +794,8 @@ img {
 }
 
 .comands {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
   background-color: #f5f4fa;
 }
 
