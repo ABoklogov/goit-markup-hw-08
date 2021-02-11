@@ -17,44 +17,53 @@
         <div class="container header-main">
             <nav class="menu">
                 <a href="#" lang="en" class="logo logo-header"><span>Web</span>Studio</a>
-                <button class="menu-btn" type="button">
+                <button 
+                class="menu-btn is-open"
+                type="button" 
+                data-menu-button
+                aria-expanded="true"
+                aria-controls="menu-conteiner"
+                >
                     <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
-                        <use href="#"></use>
+                        <use class="icon-mobile-close" href="./images/decoration/icons/symbol-defs.svg#icon-mobile-close"></use>
+                        <use class="icon-mobile-menu" href="./images/decoration/icons/symbol-defs.svg#icon-mobile-menu"></use>
                     </svg>
                 </button>
-                <div class="menu-conteiner">
-                    <!-- Навигация -->
-                    <ul class="site-nav list-no-style">
-                        <li class="site-nav-item">
-                            <a href="./index.html" class="link link-visited">Студия</a>
-                        </li>
-                        <li class="site-nav-item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-                        <li class="site-nav-item"><a href="#" class="link">Контакты</a></li>
-                    </ul>
-                    <!-- Контакты -->
-                    <div class="menu-conteiner-contacts">
-                        <ul class="contacts-nav list-no-style">
-                            <li class="contacts-nav-mail">
-                                <a class="contacts-nav-paragraph contacts-nav-paragraph-mail" href="mailto:info@devstudio.com">
-                                    <svg class="contacts-icon icon-envelope">
-                                        <use href="./images/decoration/icons/symbol-defs.svg#icon-envelope"></use>
-                                    </svg>info@devstudio.com
-                                </a>
+                <div class="menu-conteiner is-open" id="menu-conteiner" data-menu>
+                    <div class="menu-conteiner-box">
+                        <!-- Навигация -->
+                        <ul class="site-nav list-no-style">
+                            <li class="site-nav-item">
+                                <a href="./index.html" class="link link-visited">Студия</a>
                             </li>
-                            <li class="contacts-nav-tel">
-                                <a class="contacts-nav-paragraph contacts-nav-paragraph-tel" href="tel:+380961111111">
-                                    <svg class="contacts-icon icon-smartphone">
-                                        <use href="./images/decoration/icons/symbol-defs.svg#icon-smartphone"></use>
-                                    </svg>+38 096 111 11 11
-                                </a>
-                            </li>
+                            <li class="site-nav-item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+                            <li class="site-nav-item"><a href="#" class="link">Контакты</a></li>
                         </ul>
-                        <ul class="menu-conteiner-contacts-list list-no-style">
-                            <li class="menu-conteiner-contacts-item"><a href="#" class="menu-conteiner-contacts-site" aria-label="instagram">Instagram</a></li>
-                            <li class="menu-conteiner-contacts-item"><a href="#" class="menu-conteiner-contacts-site" aria-label="Twitter">Twitter</a></li>
-                            <li class="menu-conteiner-contacts-item"><a href="#" class="menu-conteiner-contacts-site" aria-label="Facebook">Facebook</a></li>
-                            <li class="menu-conteiner-contacts-item"><a href="#" class="menu-conteiner-contacts-site" aria-label="LinkedIn">LinkedIn</a></li>
-                        </ul>
+                        <!-- Контакты -->
+                        <div class="menu-conteiner-contacts">
+                            <ul class="contacts-nav list-no-style">
+                                <li class="contacts-nav-mail">
+                                    <a class="contacts-nav-paragraph contacts-nav-paragraph-mail" href="mailto:info@devstudio.com">
+                                        <svg class="contacts-icon icon-envelope">
+                                            <use href="./images/decoration/icons/symbol-defs.svg#icon-envelope"></use>
+                                        </svg>info@devstudio.com
+                                    </a>
+                                </li>
+                                <li class="contacts-nav-tel">
+                                    <a class="contacts-nav-paragraph contacts-nav-paragraph-tel" href="tel:+380961111111">
+                                        <svg class="contacts-icon icon-smartphone">
+                                            <use href="./images/decoration/icons/symbol-defs.svg#icon-smartphone"></use>
+                                        </svg>+38 096 111 11 11
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="menu-conteiner-contacts-list list-no-style">
+                                <li class="menu-conteiner-contacts-item"><a href="#" class="menu-conteiner-contacts-site" aria-label="instagram">Instagram</a></li>
+                                <li class="menu-conteiner-contacts-item"><a href="#" class="menu-conteiner-contacts-site" aria-label="Twitter">Twitter</a></li>
+                                <li class="menu-conteiner-contacts-item"><a href="#" class="menu-conteiner-contacts-site" aria-label="Facebook">Facebook</a></li>
+                                <li class="menu-conteiner-contacts-item"><a href="#" class="menu-conteiner-contacts-site" aria-label="LinkedIn">LinkedIn</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </nav>
