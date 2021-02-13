@@ -1,10 +1,20 @@
 .contacts-nav {
   display: flex;
-  flex-direction: column-reverse;
-  padding-bottom: 64px;
+  background-color: green;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column-reverse;
+    margin-bottom: 64px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+  }
 
   & .contacts-nav-tel {
-    margin-bottom: 32px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 32px;
+    }
   }
 
   li:not(:last-child) {
@@ -25,10 +35,23 @@
   }
 
   &-paragraph-tel {
-    font-size: 34px;
-    line-height: 1.18;
     letter-spacing: 0.02em;
-    color: $hover-color;
+
+    @media screen and (max-width: 767px) {
+      font-size: 34px;
+      line-height: 1.18;
+      color: $hover-color;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 12px;
+      line-height: 1.17;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.14;
+    }
   }
 
   &-paragraph-mail {
@@ -39,17 +62,22 @@
 }
 
 .menu-conteiner {
-  display: none;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  padding: 48px 40px;
-  width: 100%;
-  height: 796px;
-
   background-color: $white-color;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 48px 40px;
+    height: 796px;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
 
   &.is-open {
     display: block;
@@ -60,10 +88,24 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+
+    @media screen and (max-widht: 767px) {
+      flex-direction: row;
+    }
+
+    // @media screen and (min-widht: 768px) {
+    //   flex-direction: row;
+    // }
   }
 
   &-contacts-list {
-    display: flex;
+    @media screen and (max-width: 767px) {
+      display: flex;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
 
   &-contacts-item:not(:last-child) {

@@ -26,7 +26,8 @@
   border: none;
   cursor: pointer;
 
-  &:hover .icon-close {
+  &:hover .icon-close,
+  &:focus .icon-close {
     fill: $hover-color;
   }
 }
@@ -66,4 +67,39 @@
     display: inline-block;
     margin-right: 10px;
   }
+}
+
+/* ---------mobile-menu-button---------- */
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  top: 10px;
+  right: 15px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: $white-color;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &:hover .icon-mobile-close,
+  &:focus .icon-mobile-close,
+  &:hover .icon-mobile-menu,
+  &:focus .icon-mobile-menu {
+    fill: $hover-color;
+  }
+
+  & .icon-mobile-close {
+    display: none;
+  }
+}
+
+.menu-btn.is-open .icon-mobile-close {
+  display: block;
+}
+.menu-btn.is-open .icon-mobile-menu {
+  display: none;
 }

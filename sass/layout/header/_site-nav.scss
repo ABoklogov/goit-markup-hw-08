@@ -1,4 +1,8 @@
 .site-nav {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
   &-item:first-child {
     margin-top: 4px;
   }
@@ -16,6 +20,13 @@
     letter-spacing: 0.02em;
     color: $title-color;
     transition: color 250ms $timing-function;
+
+    @media screen and (min-width: 768px) {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+    }
   }
 
   .link:hover,
@@ -27,29 +38,14 @@
 
 .menu {
   display: flex;
-  flex-direction: column;
   height: 60px;
-  padding: 16px 15px;
-}
+  padding: 16px 0;
+  width: 100%;
 
-.menu-btn {
-  position: absolute;
-  z-index: 3;
-  top: 10px;
-  right: 15px;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: $white-color;
+  // @media screen and (max-widht: 767px) {
+  // }
 
-  & .icon-mobile-close {
-    display: none;
-  }
-}
-
-.menu-btn.is-open .icon-mobile-close {
-  display: block;
-}
-.menu-btn.is-open .icon-mobile-menu {
-  display: none;
+  // @media screen and (min-widht: 768px) {
+  //   display: flex;
+  // }
 }
