@@ -1,15 +1,32 @@
 .footer-box-contacts {
-  // margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 84px;
+    margin-bottom: 0;
+    text-align: left;
+  }
 
   .address {
     margin-bottom: 8px;
     font-style: normal;
     color: $white-color;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
   }
 
   li:not(:last-child) {
     margin-bottom: 8px;
     display: inline-block;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
   }
 
   &-links {

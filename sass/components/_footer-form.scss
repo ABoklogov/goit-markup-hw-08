@@ -1,9 +1,22 @@
 .footer-form {
-  display: flex;
-  flex-direction: column;
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+    text-align: left;
+  }
 
   &-box {
-    width: 100%;
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      display: block;
+    }
   }
 
   &-title {
@@ -20,13 +33,22 @@
 
   &-label {
     // margin-right: 12px;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+      margin: 0;
+      max-width: 358px;
+      margin-right: 12px;
+    }
   }
 
   &-input {
     display: block;
     width: 100%;
     height: 50px;
-    margin-bottom: 20px;
+
     padding: 15px 16px;
     background-color: $footer-background-color;
     border: 1px solid $border-form-color;

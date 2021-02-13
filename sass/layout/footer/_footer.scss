@@ -4,8 +4,24 @@
   padding-bottom: 60px;
   background-color: $footer-background-color;
 
+  @media screen and (min-width: 768px) {
+    height: 463px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 252px;
+  }
+
   &-links {
-    // margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 102px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+      margin-right: 93px;
+      text-align: left;
+    }
   }
 
   &-box {
@@ -15,6 +31,15 @@
     justify-content: space-between;
     text-align: center;
     height: 100%;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+      justify-content: start;
+    }
   }
 
   &-links-title {
