@@ -847,8 +847,25 @@ img {
 
 @media screen and (min-width: 768px) {
   .site-nav-item {
+    position: relative;
     height: 100%;
     padding: 32px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .link-visited::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: translate(0, 25%);
+            transform: translate(0, 25%);
+    width: 100%;
+    height: 4px;
+    background-color: #2196f3;
+    border-radius: 2px;
   }
 }
 
@@ -867,10 +884,22 @@ img {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .banner {
+    padding: 200px 0;
+  }
+}
+
 .banner .container-content {
   max-width: 360px;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .banner .container-content {
+    max-width: 696px;
+  }
 }
 
 .banner-title {
@@ -882,6 +911,13 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .banner-title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .advantages {
