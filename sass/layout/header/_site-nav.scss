@@ -1,19 +1,18 @@
 .site-nav {
   @media screen and (min-width: 768px) {
     display: flex;
+    align-items: center;
+    height: 100%;
   }
 
-  &-item:first-child {
-    margin-top: 4px;
-  }
-
-  &-item:not(:last-child) {
-    margin-bottom: 32px;
+  @media screen and (max-width: 767px) {
+    site-nav-item:first-child {
+      margin-top: 4px;
+    }
   }
 
   .link {
     display: inline-block;
-    // padding: 32px 0;
     font-weight: 500;
     font-size: 40px;
     line-height: 1.18;
@@ -36,16 +35,19 @@
   }
 }
 
-.menu {
-  display: flex;
-  height: 60px;
-  padding: 16px 0;
-  width: 100%;
+.site-nav-item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
 
-  // @media screen and (max-widht: 767px) {
-  // }
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
+  }
+}
 
-  // @media screen and (min-widht: 768px) {
-  //   display: flex;
-  // }
+.site-nav-item {
+  @media screen and (min-width: 768px) {
+    height: 100%;
+    padding: 32px 0;
+  }
 }

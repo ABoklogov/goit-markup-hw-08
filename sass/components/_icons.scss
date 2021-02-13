@@ -1,7 +1,16 @@
 /*--contacts-icons--*/
 .contacts-icon {
-  margin-right: 10px;
-  display: none;
+  @media screen and (max-width: 767px) {
+    margin-right: 10px;
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 8px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
 
   &.icon-envelope {
     width: 16px;
@@ -11,6 +20,16 @@
   &.icon-smartphone {
     width: 10px;
     height: 16px;
+
+    // @media screen and (min-width: 768px) {
+    //   width: 10px;
+    //   height: 14px;
+    // }
+
+    // @media screen and (min-width: 1200px) {
+    //   width: 10px;
+    //   height: 16px;
+    // }
   }
 }
 

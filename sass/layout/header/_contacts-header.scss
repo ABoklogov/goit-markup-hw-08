@@ -1,6 +1,5 @@
 .contacts-nav {
   display: flex;
-  background-color: green;
 
   @media screen and (max-width: 767px) {
     flex-direction: column-reverse;
@@ -9,6 +8,10 @@
 
   @media screen and (min-width: 768px) {
     flex-direction: column;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
   }
 
   & .contacts-nav-tel {
@@ -33,36 +36,54 @@
   &-paragraph:focus {
     color: $hover-color;
   }
+}
 
-  &-paragraph-tel {
-    letter-spacing: 0.02em;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-nav-mail {
+    margin-bottom: 10px;
+  }
+}
 
-    @media screen and (max-width: 767px) {
-      font-size: 34px;
-      line-height: 1.18;
-      color: $hover-color;
-    }
+@media screen and (min-width: 1200px) {
+  .contacts-nav-mail {
+    margin-right: 30px;
+  }
+}
 
-    @media screen and (min-width: 768px) {
-      font-size: 12px;
-      line-height: 1.17;
-    }
+.contacts-nav-paragraph-mail {
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
 
-    @media screen and (min-width: 1200px) {
-      font-size: 14px;
-      line-height: 1.14;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.contacts-nav-paragraph-tel {
+  letter-spacing: 0.02em;
+
+  @media screen and (max-width: 767px) {
+    font-size: 34px;
+    line-height: 1.18;
+    color: $hover-color;
   }
 
-  &-paragraph-mail {
-    font-size: 24px;
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
     line-height: 1.17;
-    letter-spacing: 0.02em;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
 .menu-conteiner {
   background-color: $white-color;
+  width: 100%;
+  height: 100%;
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -72,11 +93,10 @@
     z-index: 2;
     padding: 48px 40px;
     height: 796px;
-    width: 100%;
-
-    @media screen and (min-width: 768px) {
-      display: flex;
-    }
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
   }
 
   &.is-open {
@@ -85,17 +105,17 @@
 
   &-box {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     height: 100%;
 
-    @media screen and (max-widht: 767px) {
-      flex-direction: row;
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
     }
 
-    // @media screen and (min-widht: 768px) {
-    //   flex-direction: row;
-    // }
+    @media screen and (min-width: 768px) {
+      width: 100%;
+      align-items: center;
+    }
   }
 
   &-contacts-list {
@@ -117,7 +137,7 @@
   &-contacts-site {
     font-weight: 500;
     font-size: 18px;
-    line-height: 1, 22;
+    line-height: 1.22;
     letter-spacing: 0.02em;
     color: $hover-color;
   }
