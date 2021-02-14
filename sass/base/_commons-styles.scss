@@ -9,6 +9,10 @@ body {
   background-color: $white-color;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .list-no-style {
   list-style: none;
   margin: 0;
