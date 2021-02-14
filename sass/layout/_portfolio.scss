@@ -34,10 +34,20 @@
 }
 
 .portfolio-list {
-  width: 370px;
-  margin: 15px;
+  // width: 370px;
+  // margin: 15px;
   outline: 1px solid $portfolio-item-border-color;
   outline-offset: -1px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 450px;
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 6 * 15px) / 3);
+  }
 
   &-link {
     display: block;
@@ -54,6 +64,16 @@
     position: relative;
     overflow: hidden;
   }
+}
+
+.portfolio-list:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+}
+
+.portfolio-list-link-hover > img {
+  width: 100%;
 }
 
 .portfolio-box-aside {
