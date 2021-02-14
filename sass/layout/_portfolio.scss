@@ -1,12 +1,36 @@
 .portfolio-items {
-  // display: flex;
-  // justify-content: center;
-  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+
+  @media screen and (max-width: 767px) {
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+  }
 }
 
 /* ---------portfolio button--------- */
+.portfolio-items-button {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
+}
+
+.portfolio-items-button:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}
+
 .portfolio-items-button:not(:last-child) {
   margin-right: 8px;
+  display: inline-block;
 }
 
 .portfolio-list {

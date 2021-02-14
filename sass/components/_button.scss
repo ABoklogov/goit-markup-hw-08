@@ -17,6 +17,12 @@
   background-color: $hover-color;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-btn {
+    margin: 0;
+  }
+}
+
 .modal-btn-close {
   position: absolute;
   top: 8px;
