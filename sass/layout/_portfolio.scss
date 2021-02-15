@@ -34,8 +34,6 @@
 }
 
 .portfolio-list {
-  // width: 370px;
-  // margin: 15px;
   outline: 1px solid $portfolio-item-border-color;
   outline-offset: -1px;
 
@@ -51,6 +49,7 @@
 
   &-link {
     display: block;
+    height: 100%;
     transition: box-shadow 250ms $timing-function;
   }
 
