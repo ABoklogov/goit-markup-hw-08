@@ -73,15 +73,15 @@
 
   @media screen and (min-width: 768px) {
     line-height: 1.71;
-  }
-
-  @media screen and (min-width: 768px) {
     margin-bottom: 30px;
   }
 
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
   &-link {
-    // display: block;
-    // text-decoration: underline;
     color: $hover-color;
   }
 }

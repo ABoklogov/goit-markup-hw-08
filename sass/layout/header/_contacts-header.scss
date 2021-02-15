@@ -83,6 +83,7 @@
 .menu-conteiner {
   background-color: $white-color;
   width: 100%;
+  // max-width: 400px;
   height: 100%;
 
   @media screen and (max-width: 767px) {
@@ -120,7 +121,8 @@
 
   &-contacts-list {
     @media screen and (max-width: 767px) {
-      display: flex;
+      display: inline-flex;
+      flex-wrap: wrap;
     }
 
     @media screen and (min-width: 768px) {
