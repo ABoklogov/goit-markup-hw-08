@@ -20,10 +20,6 @@
     }
   }
 
-  li:not(:last-child) {
-    // margin-bottom: 32px;
-  }
-
   &-paragraph {
     font-weight: 500;
     display: inline-flex;
@@ -57,6 +53,11 @@
 
   @media screen and (min-width: 768px) {
     font-size: 12px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
