@@ -115,6 +115,10 @@
     line-height: 1.56;
     letter-spacing: 0.03em;
     color: $white-color;
+
+    @media screen and (max-width: 350px) {
+      font-size: 14px;
+    }
   }
 
   .portfolio-list-link:hover &,

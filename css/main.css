@@ -217,7 +217,7 @@ img {
 /*--modal-form-icon--*/
 .conditions-icon-check {
   display: block;
-  width: 16px;
+  min-width: 16px;
   height: 15px;
   margin-right: 7px;
   border: 2px solid #212121;
@@ -1037,8 +1037,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .banner {
-    height: 600px;
-    padding: 200px 0;
+    height: 400px;
     max-width: 1600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/decoration/banner/desktop/desktop-banner.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/decoration/banner/desktop/desktop-banner.jpg);
@@ -1049,6 +1048,13 @@ img {
   .banner {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/decoration/banner/desktop/desktop-banner@2x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/decoration/banner/desktop/desktop-banner@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner {
+    height: 600px;
+    padding: 200px 0;
   }
 }
 
@@ -1722,6 +1728,12 @@ img {
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+
+@media screen and (max-width: 350px) {
+  .portfolio-box-description-text {
+    font-size: 14px;
+  }
 }
 
 .portfolio-list-link:hover .portfolio-box-description,
